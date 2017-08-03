@@ -1,13 +1,18 @@
-.Searchbg {
+.card {
+    padding: 1em;
+    margin: 2em 0em;
+}
+
+.contain{
     background: rgba(255,255,255,0.5); 
     padding:1em; 
     border-radius: 3px
 }
 
-.formWidth {
-    width:100%;
-}
-
-.selectWidth {
-    width: 50%;
+.mainSearch {
+    min-height: 100vh;
+    background: #eee; 
+    background-size: cover;
+    background-image: url(../../../assets/background.jpg);
+    background-repeat: no-repeat
 }

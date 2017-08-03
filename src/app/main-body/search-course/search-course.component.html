@@ -1,15 +1,23 @@
-<div class="Searchbg text-center">
-<h1>Find the best resources and start coding today</h1>
-<p>Select what and how you want to learn, and read what fellow programmers think of the resources available.</p>
-        
-    <form class="formWidth">
-            <md-select class="selectWidth" placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
-                <md-option *ngFor="let food of foods" [value]="food.value">
-                     {{food.viewValue}}
-                </md-option>
-            </md-select>
-     <p> Selected value: {{selectedValue}} </p>
-    </form>
-</div>
-   
-   
+<!-- aligning content using flex note this only works with bootstrap 4 and above -->
+<div class="text-center">
+    <div class="col-12" style="padding:0">
+        <div class="col-12 d-flex justify-content-center align-items-center mainSearch">
+            <div class="col-md-6 row contain">
+                <!-- End -->
+                <h1>Find the best resources and start coding today</h1>
+                <p>Select what and how you want to learn, and read what fellow programmers think of the resources available.</p>
+                <div class="card col-12">
+                    <h3>What subject(s) interest you? </h3>
+                    <!-- angular material -->
+                    <form class="formWidth">
+                    <md-select class="selectWidth" placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
+                        <md-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                        </md-option>
+                    </md-select>
+                    <p> Selected value: {{selectedValue}} </p>
+                    </form>
+                   
+                </div>
+            </div>
+        </div>

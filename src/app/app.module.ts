@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchCourseComponent } from './main-body/search-course/search-course.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SearchCourseComponent } from './main-body/search-course/search-course.c
     NavbarComponent,
     FooterComponent,
     SearchCourseComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
